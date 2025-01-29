@@ -12,11 +12,11 @@ Below is the table explaining the characteristics of the experiments with traces
 
 | **Experiments** | **Segmented** | **Unsegmented** | **Zipped** | **TVLA** | **DPA** |
 |:---------------:|:-------------:|:---------------:|:----------:|:--------:|:-------:|
-|     exp_hg_off_prng_off     |     :x:        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|     exp_hg_off_prng_off     |     :x:        |       ✔️        |     ✔️     |    :x:    |   ✔️    |
 |     exp_hg_on_prng_on     |     :x:       |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
-|     exp_hg_off_prng_on     |    :x:       |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
-|    exp_hg_off_prng_on_thermal_chamber   |     ✔️        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
-|    exp_hg_off_prng_on_thermal_chamber_room   |     ✔️        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|     exp_hg_off_prng_on     |    :x:       |       ✔️        |     :x:     |    ✔️    |   ✔️    |
+|    exp_hg_off_prng_on_thermal_chamber   |     ✔️        |       :x:        |     :x:     |    ✔️    |   ✔️    |
+|    exp_hg_off_prng_on_thermal_chamber_room   |     ✔️        |       :x:       |     :x:     |    ✔️    |   ✔️    |
 
 
 # Python Scripts

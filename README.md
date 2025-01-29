@@ -1,12 +1,27 @@
 # Bake it till you make it! Heat-induced Power Side-channel Analysis against Masked Neural Networks
-This repo contains the code and a link to the dataset of traces used to evaluate the robustness of masked neural networks (NNs) against side-channel attacks. The results of this study are presented in the paper ``Bake It Till You Make It: Heat-induced Power Leakage from Masked Neural Networks'' (https://eprint.iacr.org/2023/076.pdf). [ModuloNET](https://tches.iacr.org/index.php/TCHES/article/view/9306/8872), a masked NN offering first-order security, is implemented on Artix-7 FPGA on Chipwhisperer CW305 target, and the capturing process is controlled by the Chipwhisperer Lite and CW Husky boards. A set of power traces captured for this study is gievn in the dataset folder. 
+This repo contains the code and a link to the dataset of traces used to evaluate the robustness of masked neural networks (NNs) against side-channel attacks. The results of this study are presented in the paper ``Bake It Till You Make It: Heat-induced Power Leakage from Masked Neural Networks'' (https://eprint.iacr.org/2023/076.pdf). [ModuloNET](https://tches.iacr.org/index.php/TCHES/article/view/9306/8872), a masked NN offering first-order security, is implemented on Artix-7 FPGA on Chipwhisperer CW305 target, and the Chipwhisperer Lite and CW Husky boards control the capturing process. A set of power traces captured for this study is gievn in the dataset folder. 
 
 # Dataset
 The dataset is available [here](https://app.box.com/v/BITUMI-traces).
 
+Experiments list:
+
+- intermediate_values: datasets with correct intermediate values for all the experiments.
+
+Below is the table explaining the characteristics of the experiments with traces:
+
+| **Experiments** | **Segmented** | **Unsegmented** | **Zipped** | **TVLA** | **DPA** |
+|:---------------:|:-------------:|:---------------:|:----------:|:--------:|:-------:|
+|     exp_hg_off_prng_off     |     :x:        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|     exp_hg_on_prng_on     |     :x:       |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|     exp_hg_off_prng_on     |    :x:       |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|    exp_hg_off_prng_on_thermal_chamber   |     ✔️        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+|    exp_hg_off_prng_on_thermal_chamber_room   |     ✔️        |       ✔️        |     ✔️     |    ✔️    |   ✔️    |
+
+
 # Python Scripts
 
-In the folder Python, you will find Jupyter python notebooks which can be used to replicate the results using the dataset provided.
+In the Python folder, you will find Jupyter python notebooks, which can be used to replicate the results using the dataset provided.
 
 
 # .bib citation

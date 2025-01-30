@@ -4,6 +4,8 @@ This repo contains the code and a link to the dataset of traces used to evaluate
 # Dataset
 The dataset is available [here](https://app.box.com/v/BITUMI-traces).
 
+The dataset could be partially downloaded. To accomplish that safely, you should still maintain the folder structure for the individual experiments (BITUMI_scape->Experiments/metadata.json->(downloaded the need experiment)->(partially download the datasets too)).
+
 Experiments list:
 
 - intermediate_values: datasets with correct intermediate values for all the experiments.
